@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Booking Servis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">RG</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Beranda <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jumbroton.html">Tentang RG</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produk Kami</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="album-Oli.html">Oli</a>
+              <a class="dropdown-item" href="album-aki.html">Aki</a>
+              <a class="dropdown-item" href="album-Ban.html">Ban</a>
+              <a class="dropdown-item" href="album-Rem.html">Rem</a>
+              <a class="dropdown-item" href="album-Shock.html">Shock Absorber</a>
+              <a class="dropdown-item" href="album-AC.html">AC</a>
+              <a class="dropdown-item" href="album-produk-lain.html">Produk Lainnya</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lainnya</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="pricing.html">Paket Servis</a>
+              <a class="dropdown-item" href="form-validation-checkout.html">Booking Servis</a>
+              <a class="dropdown-item" href="album1.html">Galeri Kami</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="Album\logo1.jpg" alt="" width="72" height="72">
+        <h2>Formulir Booking Servis</h2>
+        <p class="lead">Isi data di bawah ini untuk mengamankan antrean servis kendaraanmu di RezkyGarage.</p>
+      </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Data Diri & Kendaraan</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nama Depan</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nama Depan tidak boleh kosong.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Nama Belakang</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nama Belakang tidak boleh kosong.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Nomor Telepon <span class="text-muted"></span></label>
+              <input type="tel" class="form-control" id="phone" placeholder="Contoh: 08123456789" required>
+              <div class="invalid-feedback">
+                Masukkan nomor telepon yang valid untuk pembaruan pengiriman.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Merek & Tipe Kendaraan</label>
+              <input type="text" class="form-control" id="address" placeholder="Contoh: Honda Vario 150 / Toyota Avanza" required>
+              <div class="invalid-feedback">
+                Masukkan Merek & Tipe Kendaraan.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Nomor Polisi<span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="tanggalBooking">Tanggal Booking</label>
+                <input type="date" class="form-control" id="tanggalBooking" required>
+                <div class="invalid-feedback">
+                  Pilih tanggal booking Anda.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="jamBooking">Jam Booking</label>
+                <input type="time" class="form-control" id="jamBooking" required>
+                <div class="invalid-feedback">
+                  Pilih jam booking Anda.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Jenis Kendaraan</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Pilih Jenis Kendaraan...</option>
+                  <option value="roda_dua">Roda Dua (Motor)</option>
+                  <option value="roda_empat">Roda Empat (Mobil)</option>
+                </select>
+                <div class="invalid-feedback">
+                  Tolong isi Jenis Kendaraan.
+                </div>
+              </div> 
+              <div class="col-md-4 mb-3">
+                <label for="state">Paket Servis</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Pilih Jenis Kendaraan Dahulu...</option>
+                </select>
+                <div class="invalid-feedback">
+                  Tolong isi Paket Servis.
+                </div>
+              </div>
+            </div>
+           
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <!-- Script Kustom untuk Dropdown Paket Servis Motor & Mobil -->
+    <script>
+      const country = document.getElementById('country');
+      const state = document.getElementById('state');
+
+      const opsiPaket = {
+        roda_dua: [
+          "Servis Ringan Motor",
+          "Tune up Motor",
+          "Detailing Motor"
+        ],
+        roda_empat: [
+          "Servis Ringan Mobil",
+          "Servis Berat Mobil",
+          "Detailing Mobil"
+        ]
+      };
+
+      country.addEventListener('change', function() {
+        state.innerHTML = '<option value="">Pilih Paket Servis...</option>';
+        const pilihan = this.value; 
+        
+        if (opsiPaket[pilihan]) {
+          opsiPaket[pilihan].forEach(function(paket) {
+            const option = document.createElement('option');
+            option.value = paket;
+            option.textContent = paket;
+            state.appendChild(option);
+          });
+        } else {
+           state.innerHTML = '<option value="">Pilih Jenis Kendaraan Dahulu...</option>';
+        }
+      });
+    </script>
+  </body>
+</html>
